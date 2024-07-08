@@ -61,7 +61,7 @@ export default function Home() {
       
       <section id="about" className="relative z-0 scroll-mt-24 w-full">
         <div className="">
-          <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:p-16">
+          <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:px-16 sm:pt-0 sm:pb-16">
             <div className="flex flex-col gap-y-4">
               <div className="flex items-center">
                 <span className="h-4 w-4 bg-ps-red mr-2" />
@@ -83,7 +83,7 @@ export default function Home() {
 
       <section id="work" className="relative z-0 scroll-mt-24 w-full">
         <div className="">
-          <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:p-16">
+          <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:px-16 sm:pt-0 sm:pb-16">
             <div className="flex flex-col gap-y-4 w-full">
               <div className="flex items-center">
                 <span className="h-4 w-4 bg-ps-red mr-2" />
@@ -134,8 +134,8 @@ export default function Home() {
       </section>
 
       <section id="leadership" className="relative z-0 scroll-mt-24 w-full">
-        <div className="pt-24">
-          <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:p-16">
+        <div className="">
+          <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:px-16 sm:pt-0 sm:pb-16">
             <div className="flex flex-col gap-y-4 w-full">
               <div className="flex items-center">
                 <span className="h-4 w-4 bg-ps-red mr-2" />
@@ -172,7 +172,7 @@ export default function Home() {
       </section>
 
       <section id="join" className="relative z-0 scroll-mt-24 w-full">
-        <div className="pt-24">
+        <div className="">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:p-16">
             <div className="flex flex-col gap-y-4 w-full">
               <div className="flex items-center">
