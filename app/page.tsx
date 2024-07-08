@@ -104,8 +104,8 @@ export default function Home() {
                         </span>
                       </div>
                       <div className="ml-6 text-xs">
-                        {item.blurbs.map((blurb) => (
-                          <span>{blurb}</span>
+                        {item.blurbs.map((blurb, i) => (
+                          <span key={`blurb-${i}`}>{blurb}</span>
                         ))}
                       </div>
                     </li>
@@ -157,8 +157,8 @@ export default function Home() {
                           priority
                         />
                         <div className="group-hover:block hidden">
-                          {item.desc.map((blurb) => (
-                            <p className="mb-2">{ blurb }</p>
+                          {item.desc.map((blurb, i) => (
+                            <p className="mb-2" key={`blurb-${i}`}>{ blurb }</p>
                           ))}
                         </div>
                       </div>
