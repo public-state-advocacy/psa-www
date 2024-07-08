@@ -156,11 +156,16 @@
   font-family: "Poppins", system-ui, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-start-rgb));
   font-family: "Poppins", system-ui, sans-serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
