@@ -48,7 +48,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="absolute w-[450px] left-[10px] top-[500px] sm:left-[initial] sm:right-[100px] sm:top-[300px] uppercase flex">
+            <div className="absolute w-[450px] left-[10px] top-[370px] sm:left-[initial] sm:right-[100px] sm:top-[300px] uppercase flex">
               <span className="text-2xl text-ps-red mr-4">+</span>
               <span className="text-xl sm:text-2xl">Advocacy for Decentralized Communities</span>
             </div>
@@ -60,7 +60,7 @@ export default function Home() {
       </section>
       
       <section id="about" className="relative z-0 scroll-mt-24 w-full">
-        <div className="">
+        <div className="pt-10">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:px-16 sm:pt-0 sm:pb-16">
             <div className="flex flex-col gap-y-4">
               <div className="flex items-center">
@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       <section id="work" className="relative z-0 scroll-mt-24 w-full">
-        <div className="">
+        <div className="pt-10">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:px-16 sm:pt-0 sm:pb-16">
             <div className="flex flex-col gap-y-4 w-full">
               <div className="flex items-center">
@@ -133,8 +133,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="leadership" className="relative z-0 scroll-mt-24 w-full">
-        <div className="">
+      <section id="leadership" className="relative z-0 scroll-mt-24 w-full overflow-x-hidden">
+        <div className="pt-10">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:px-16 sm:pt-0 sm:pb-16">
             <div className="flex flex-col gap-y-4 w-full">
               <div className="flex items-center">
@@ -172,7 +172,7 @@ export default function Home() {
       </section>
 
       <section id="join" className="relative z-0 scroll-mt-24 w-full">
-        <div className="">
+        <div className="pt-10">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:p-16">
             <div className="flex flex-col gap-y-4 w-full">
               <div className="flex items-center">

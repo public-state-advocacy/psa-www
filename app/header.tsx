@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className="bg-black fixed group left-0 right-0 top-0 z-[501] h-24 border-b border-gray-900 bg-gray-1100 bg-opacity-[0.875] shadow-2xl width-before-scroll-bar">
       
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-full">
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 h-full z-[501]">
         <div className="flex lg:flex-1">
           <Link href="#hero" className="-m-1.5 p-1.5 flex">
             <Image
@@ -56,7 +56,7 @@ export default function Header() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
           <div className="flex items-center justify-between">
             <Link href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Public State Agency</span>
               <Image
               src="/psa-logo.png"
               alt="Public State Agency"
