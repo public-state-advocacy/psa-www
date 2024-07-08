@@ -18,7 +18,7 @@ const leadership = [
   { name: 'Sarah Brennan', img: '/leadership/sarah.png', desc: ['Sarah Brennan is General Counsel of Delphi Ventures, also helping lead Delphi\'s advocacy and policy initiatives. Sarah is also co-founder of LeXpunK, a builder centric community of lawyers and developers focused on open source legal materials and public advocacy for decentralized technology. Having been actively involved in the digital asset space since 2017, Sarah previously founded and led a practice focused on transactional, regulatory and compliance matters. Sarah draws from a broad range of experience with close to 15 years of corporate and securities legal experience, having worked in NY, DC and internationally representing public and private companies, venture capital firms, startups, and investment banks on a wide array of commercial and business transactions, including capital raising transactions and financings, private and public M&A transactions, corporate governance, and public company reporting and regulatory compliance.']},
   { name: 'Marc Goldich', img: '/leadership/marc.png', desc: ['Marc Goldich is the General Counsel of Proximity Labs, a research and development firm supporting projects building on NEAR through grants, advisory services, and developer support. Marc is also co-founder of LeXpunK, a builder centric community of lawyers and developers focused on open source legal materials and public advocacy for decentralized technology. Marc was previously General Counsel of a global blockchain and decentralized finance software development company. Prior to that he was President and CLO of LawCoin, a legal industry fintech platform, and Partner at Axler Goldich, a class action, commercial litigation, whistleblower, and business advisory law firm which has recovered millions of dollars on behalf of clients and class members nationwide. Marc\'s practice at Axler Goldich also included assisting investors and technology clients with navigating the continuously developing legal landscape for cryptocurrency, smart contracts, and blockchain technology. ']},
   { name: 'Larry Florio', img: '/leadership/larry.png', desc: ['Larry Florio is general counsel of 1kx, where he oversees all legal matters in addition to working on regulatory & policy matters and open-source public goods. Larry has been a corporate & securities lawyer for over a decade, working with a wide range of crypto-native projects and traditional asset managers, including Syndicate Protocol and Blackstone. Larry has been an active member of advocacy & legal engineering DAO LeXpunK Army since its launch and is one of the summoners of Hydra Ventures, the first investment DAO focused exclusively on investing in & incubating other investment DAOs.']},
-  { name: 'Nelson Rosario', img: '/leadership/nelson.png', desc: ['Nelson Rosario is the Founder of Rosario Tech Law, LLC, a boutique law firm based in Chicago working with clients building the future worldwide. Nelson\'s practice is focused on outside general counsel work, tech transactions, commercial agreements, and intellectual property. In addition to his law practice, Mr. Rosario is the Executive Director of the Illinois Blockchain Association focused on educating about, advocating for, and organizing on behalf of the blockchain industry.']},
+  { name: 'Nelson Rosario', img: '/leadership/nelson2.png', desc: ['Nelson Rosario is the Founder of Rosario Tech Law, LLC, a boutique law firm based in Chicago working with clients building the future worldwide. Nelson\'s practice is focused on outside general counsel work, tech transactions, commercial agreements, and intellectual property. In addition to his law practice, Mr. Rosario is the Executive Director of the Illinois Blockchain Association focused on educating about, advocating for, and organizing on behalf of the blockchain industry.']},
   { name: 'Chris Donovan', img: '/leadership/chris.png', desc: ['Chris Donovan is the Chief Operating Officer of NEAR Foundation, having previously served as CEO and General Counsel and he works closely with the NFC and the broader ecosystem on the Foundation’s evolution plans. NEAR is a collective, a foundation and a development platform built on a layer 1 blockchain designed to be fast, secure and scalable.', 'Previously, Donovan was a partner and head of legal at Outlier Ventures, one of the first VC firms dedicated to investing in the emerging crypto ecosystem. There, Donovan helped navigate the legal and regulatory complexities of Web3 by helping Outlier Ventures support the launch and growth of several billion-dollar crypto economies.']},
 ]
 
@@ -60,7 +60,7 @@ export default function Home() {
       </section>
       
       <section id="about" className="relative z-0 scroll-mt-24 w-full">
-        <div className="pt-24">
+        <div className="">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:p-16">
             <div className="flex flex-col gap-y-4">
               <div className="flex items-center">
@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       <section id="work" className="relative z-0 scroll-mt-24 w-full">
-        <div className="pt-24">
+        <div className="">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)] sm:p-16">
             <div className="flex flex-col gap-y-4 w-full">
               <div className="flex items-center">
@@ -118,7 +118,7 @@ export default function Home() {
                   <span>Our work & links to our Github.</span>
                   <div className="grid grid-cols-2 gap-4">
                     {resources.map((item) => (
-                      <div className="flex flex-col text-black relative inline-flex items-center gap-3 rounded-xl p-3 mx-0 bg-gradient-to-r from-[#ffacab] via-[#ffea9e] to-[#97edff] mt-2">
+                      <div key={item.name} className="flex flex-col text-black relative inline-flex items-center gap-3 rounded-xl p-3 mx-0 bg-gradient-to-r from-[#ffacab] via-[#ffea9e] to-[#97edff] mt-2">
                         <a href={item.href} className="hover:bg-opacity-10 flex flex-col h-14 text-black w-full items-center justify-center rounded-lg transition duration-300 ease-in-out bg-white bg-opacity-75">
                           <span>{ item.name }</span>
                         </a>
@@ -144,7 +144,7 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-6 justify-evenly w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {leadership.map((item) => (
-                  <div className="cursor-pointer group rounded-xl bg-gradient-to-r from-[#ffacab] via-[#ffea9e] to-[#97edff] p-2">
+                  <div key={item.name} className="cursor-pointer group rounded-xl bg-gradient-to-r from-[#ffacab] via-[#ffea9e] to-[#97edff] p-2">
                     <div className="relative flex aspect-wider justify-between rounded-lg bg-white l:aspect-wider text-black p-4 w-full h-[550px]">
                       <div className="flex justify-between group-hover:flex-col group-hover:justify-start w-full">
                         <div className="text-2xl mr-2">{item.name}</div>
