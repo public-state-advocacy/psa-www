@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <video autoPlay muted loop id="myVideo" className="absolute top-[6rem] left-0">
+        <video autoPlay muted loop playsInline id="myVideo" className="absolute top-[6rem] left-0">
           <source src="light.mp4" type="video/mp4" />
         </video>
         <Header />
