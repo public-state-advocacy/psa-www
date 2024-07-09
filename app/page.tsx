@@ -204,10 +204,9 @@ export default function Home() {
                         <Image
                           src={item.img}
                           alt={item.name}
-                          className="dark:invert h-[218px] w-[218px] max-w-fit absolute top-0 right-0"
+                          className="dark:invert h-[218px] w-[218px] absolute top-0 right-0"
                           width={150}
                           height={210}
-                          priority
                         />
                       </div>
                     </div>
