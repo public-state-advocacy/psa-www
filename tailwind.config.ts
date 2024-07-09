@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'ps-red': '#F63562'
+        'ps-red': '#F63562',
+        'ps-pink-1': '#BF478E',
+        'ps-blue-1': '#55B9F3',
+        'ps-blue-2': '#355FCB'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
