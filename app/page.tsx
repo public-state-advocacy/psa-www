@@ -153,11 +153,12 @@ export default function Home() {
                   <span>Our work & links to our Github.</span>
                   <div className="grid grid-cols-2 gap-4">
                     {resources.map((item) => (
-                      <div key={item.name} className="flex flex-col text-black relative inline-flex items-center gap-3 rounded-xl p-3 mx-0 bg-gradient-to-r from-[#355FCB] via-[#55B9F3] to-[#BF478E] mt-2">
-                        <a href={item.href} className="hover:bg-opacity-10 flex flex-col h-14 text-black w-full items-center justify-center rounded-lg transition duration-300 ease-in-out bg-white bg-opacity-75">
-                          <span>{ item.name }</span>
+                      <div key={`b-${item.name}`} className="flex flex-col text-black relative inline-flex items-center gap-3 rounded-xl p-3 sm:p-6 mx-0 bg-gray-800 mt-2">
+                        <a href={item.href} className="flex flex-col h-30 sm:h-20 w-full items-center justify-center rounded-lg transition duration-300 ease-in-out">
+                          <span className="text-shadow relative z-20 w-full whitespace-pre bg-gradient-to-r from-[#355FCB] via-[#55B9F3] to-[#BF478E] bg-clip-text py-4 text-center text-base sm:text-[28px] font-normal lowercase leading-[0.9] tracking-tight text-transparent -mt-4">{ item.name }</span>
+                          <span className="text-center text-white">{ item.desc }</span>
                         </a>
-                        <span className="text-center">{ item.desc }</span>
+                        
                       </div>
                     ))}
                   </div>
