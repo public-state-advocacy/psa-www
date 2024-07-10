@@ -77,7 +77,7 @@ export default function Home() {
               <Image
                 src="/hand.webp"
                 alt="Hand Gesture"
-                className="dark:invert h-full w-auto"
+                className="h-full w-auto"
                 width={900}
                 height={460}
                 priority
@@ -205,7 +205,7 @@ export default function Home() {
                         <Image
                           src={item.img}
                           alt={item.name}
-                          className="dark:invert h-[218px] w-[218px] absolute top-0 right-0"
+                          className="h-[218px] w-[218px] absolute top-0 right-0"
                           width={150}
                           height={210}
                         />
