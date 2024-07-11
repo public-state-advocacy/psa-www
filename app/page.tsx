@@ -1,4 +1,5 @@
 import Image from "next/image";
+import classNames from 'classnames';
 
 const platform = [
   { name: 'Policy Prescriptions', label: '01', blurbs: [] },
@@ -26,6 +27,7 @@ const leadership = [
   {
     name: 'Marc Goldich',
     img: '/leadership/marc.png',
+    flipImg: true,
     x: 'https://x.com/MarcGoldich',
     linkedin: 'https://www.linkedin.com/in/marcgoldich/',
     substack: '',
@@ -34,6 +36,7 @@ const leadership = [
   {
     name: 'Larry Florio',
     img: '/leadership/larry.png',
+    flipImg: true,
     x: 'https://x.com/larryflorio',
     linkedin: 'https://www.linkedin.com/in/florio/',
     substack: '',
@@ -50,6 +53,7 @@ const leadership = [
   {
     name: 'Chris Donovan',
     img: '/leadership/chris.png',
+    flipImg: true,
     x: 'https://x.com/ChrisDoNEARvan',
     linkedin: 'https://www.linkedin.com/in/christopher-donovan-3640a2171/',
     substack: '',
@@ -205,7 +209,10 @@ export default function Home() {
                         <Image
                           src={item.img}
                           alt={item.name}
-                          className="h-[218px] w-[218px] absolute top-0 right-0"
+                          className={classNames({
+                            "h-[218px] w-[218px] absolute top-0 right-0": true,
+                            "transform scale-x-[-1] right-[-50px]": item.flipImg
+                          })}
                           width={150}
                           height={210}
                         />
