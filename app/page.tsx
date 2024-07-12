@@ -107,20 +107,17 @@ export default function Home() {
                 <span className="text-[40px] sm:text-[68px] uppercase">About Us</span>
               </div>
               <p className="uppercase">
-                We are a builder-centric movement focused on advocacy and best practices for decentralized communities through a number of avenues, each pursued in parallel. 
+                We are a builder-centric movement focused on advocacy and best practices for decentralized communities. 
               </p>
               <p className="uppercase">
-                Specifically, we direct our efforts at (i) formulating and advocating for the development of clear and well-tailored policies and regulation that advance best practices in crypto while protecting the values of openness, transparency, and decentralization; (ii) developing best practices as well as crypto native solutions (self-help and self regulatory practices); and (iii) developing model legal standards and structures to support our regulatory engagement work. 
-              </p>
-              <p className="uppercase">
-                We are founded on the belief that lawyers have both a role and duty to contribute to the open source movement as it is incumbent upon us all as members of builder-communities to be active in shaping narratives and advocating for smart policy outcomes.
+                We are founded on the belief that all constituencies have both a role and duty to contribute to the open source movement to actively shape narratives and advocate for smart policy outcomes.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="work" className="relative z-0 scroll-mt-24 w-full">
+      <section id="work" className="hidden relative z-0 scroll-mt-24 w-full">
         <div className="">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)]">
             <div className="flex flex-col gap-y-4 w-full">
@@ -173,7 +170,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="leadership" className="relative z-0 scroll-mt-24 w-full">
+      <section id="leadership" className="hidden relative z-0 scroll-mt-24 w-full">
         <div className="">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)]">
             <div className="flex flex-col gap-y-4 w-full">
@@ -226,7 +223,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="join" className="relative z-0 scroll-mt-24 w-full">
+      <section id="join" className="hidden relative z-0 scroll-mt-24 w-full">
         <div className="">
           <div className="relative z-10 flex flex-col items-center min-h-[calc(100svh-6rem)]">
             <div className="flex flex-col gap-y-4 w-full">
