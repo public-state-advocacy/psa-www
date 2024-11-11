@@ -141,7 +141,7 @@
 
 .sg {
   font-family: "SpriteGraffiti", system-ui, sans-serif;
-  line-height: normal;
+  line-height: .75;
 }
 
 .sedgwick {
@@ -163,6 +163,7 @@ html {
 body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-start-rgb));
+  /* background-color: red; */
   font-family: "Poppins", system-ui, sans-serif;
   font-weight: 400;
   scroll-behavior: smooth;
