@@ -7,7 +7,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import classNames from 'classnames';
 
-const navigation = [
+const navigation:{ name: string, href: string}[] = [
   //{ name: 'About Us', href: '/about' },
   //{ name: 'Our work', href: '/work' },
   //{ name: 'Join Us', href: '#join' },
