@@ -19,7 +19,7 @@ export default function Home() {
             <div className="z-40 absolute top-0 left-0 h-1/2 sm:h-full w-full flex flex-col justify-center items-center">
               <span className="sg text-9xl">Public</span>
               <span className="sg text-9xl">State</span>
-              <span className="poppins text-base font-bold">ADVOCACY</span>
+              <span className="poppins text-sm font-bold">ADVOCACY FOR DECENTRALIZED COMMUNITIES</span>
             </div>
             <div className="z-30 absolute bottom-[40px] left-[-150px]">
               <Image
